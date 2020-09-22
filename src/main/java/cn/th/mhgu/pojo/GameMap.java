@@ -6,8 +6,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "map")
-public class Map {
+@Table(name = "game_map")
+public class GameMap{
     @Id
     @Column(name = "id")
     private int id;
