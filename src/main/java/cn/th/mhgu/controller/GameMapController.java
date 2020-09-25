@@ -1,5 +1,6 @@
 package cn.th.mhgu.controller;
 
+import cn.th.mhgu.pojo.GameMap;
 import cn.th.mhgu.service.gameMap.GameMapService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,4 +22,10 @@ public class GameMapController {
     public String getPicName(String name) {
         return gameMapService.getPicName(name);
     }
+
+//    @GetMapping("/changePic")
+//    public String changePic() {
+//        return gameMapService.changePic();
+//    }
 }
+

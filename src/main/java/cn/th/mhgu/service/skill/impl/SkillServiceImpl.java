@@ -21,10 +21,6 @@ public class SkillServiceImpl implements SkillService {
     @Override
     public List<Skill> findSkill(String name) {
 
-        // TODO delete
-        System.out.println("200 OK");
-        System.out.println("name:[" + name +"]");
-
         if (MyUtils.strIsEmpty(name))
             return skillDao.findAll();
         else
