@@ -43,4 +43,9 @@ public class DecorationsServiceImpl implements DecorationsService {
     public List<DecorationsMaterial> findMaterial(int id) {
         return decorationsMaterialDao.findByDecorationsId(id);
     }
+
+    @Override
+    public List<Decorations> findBySystemA(String name) {
+        return decorationsDao.findBySystemA(name);
+    }
 }

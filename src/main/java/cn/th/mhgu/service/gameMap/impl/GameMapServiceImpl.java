@@ -32,4 +32,9 @@ public class GameMapServiceImpl implements GameMapService {
         }
         return "200 OK";
     }
+
+    @Override
+    public List<GameMap> findAll() {
+        return gameMapDao.findAll();
+    }
 }

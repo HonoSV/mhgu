@@ -8,4 +8,5 @@ import java.util.List;
 public interface DecorationsDao extends JpaRepository<Decorations, Integer> {
     List<Decorations> findByDecorationsNameLikeOrSystemALikeOrSystemBLike(String name, String A, String B);
     List<Decorations> findByDecorationsNameLikeOrSystemALike(String name, String A);
+    List<Decorations> findBySystemA(String name);
 }

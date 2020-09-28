@@ -24,4 +24,9 @@ public class DecorationsController {
     public List<DecorationsMaterial> findMaterial(int id) {
         return decorationsService.findMaterial(id);
     }
+
+    @GetMapping(value = "/aboutDecorations")
+    public List<Decorations> about(String name) {
+        return decorationsService.findBySystemA(name);
+    }
 }

@@ -6,6 +6,7 @@ import cn.th.mhgu.pojo.DecorationsMaterial;
 import java.util.List;
 
 public interface DecorationsService {
-    public List<Decorations> find(String name);
-    public List<DecorationsMaterial> findMaterial(int id);
+    List<Decorations> find(String name);
+    List<DecorationsMaterial> findMaterial(int id);
+    List<Decorations> findBySystemA(String name);
 }

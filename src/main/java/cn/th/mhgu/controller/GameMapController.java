@@ -27,5 +27,10 @@ public class GameMapController {
 //    public String changePic() {
 //        return gameMapService.changePic();
 //    }
+
+    @GetMapping("/gameMap")
+    public List<GameMap> findAll() {
+        return gameMapService.findAll();
+    }
 }
 
