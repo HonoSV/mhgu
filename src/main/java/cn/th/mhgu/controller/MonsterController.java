@@ -17,4 +17,9 @@ public class MonsterController {
     public List<Monster> find(String name) {
         return monsterService.find(name);
     }
+
+    @GetMapping("/ids")
+    public List<Monster> testIds(String ids) {
+        return monsterService.findByIds(ids);
+    }
 }

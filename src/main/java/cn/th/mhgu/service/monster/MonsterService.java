@@ -7,5 +7,6 @@ import java.util.List;
 public interface MonsterService {
 
     List<Monster> find(String name);
+    List<Monster> findByIds(String ids);
 
 }
