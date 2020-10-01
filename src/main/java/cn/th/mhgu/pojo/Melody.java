@@ -24,7 +24,7 @@ public class Melody {
     @Column(name = "again_time")
     private String againTime;
     @Column(name = "again_enhance_time")
-    private String againEnhanceEffect;
+    private String againEnhanceTime;
 
     public int getId() {
         return id;
@@ -82,11 +82,11 @@ public class Melody {
         this.againTime = againTime;
     }
 
-    public String getAgainEnhanceEffect() {
-        return againEnhanceEffect;
+    public String getAgainEnhanceTime() {
+        return againEnhanceTime;
     }
 
-    public void setAgainEnhanceEffect(String againEnhanceEffect) {
-        this.againEnhanceEffect = againEnhanceEffect;
+    public void setAgainEnhanceTime(String againEnhanceTime) {
+        this.againEnhanceTime = againEnhanceTime;
     }
 }
